@@ -1,0 +1,107 @@
+.filter {
+  max-width: 20rem;
+  position: relative;
+  width: 60%;
+}
+
+.selected-region {
+  align-items: center;
+  background-color: var(--bg-header);
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 1px 1px 5px 0 var(--shadow-color);
+  color: var(--input-color);
+  cursor: pointer;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 400;
+  height: 4rem;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  width: 100%;
+}
+
+.selected-region .icon {
+  font-size: 1.5rem;
+  transition: transform 0.5s;
+  color: var(--input-color);
+}
+
+.selected-region button,
+.region button {
+  background: none;
+  color: var(--input-color);
+  border: none;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.region button {
+  font-weight: 400;
+}
+
+.rotate {
+  transform: rotateZ(180deg);
+}
+
+.regions {
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-name: dropdown;
+  background-color: var(--bg-header);
+  border-radius: 0.4rem;
+  box-shadow: 1px 1px 5px 0 var(--shadow-color);
+  color: var(--text-color);
+  display: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  list-style: none;
+  padding: 1.5rem;
+  position: absolute;
+  top: calc(100% + 0.3rem);
+  width: 100%;
+  z-index: 10;
+}
+
+.region {
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  transition: all 0.5s;
+}
+
+.region:last-child {
+  margin-bottom: 0;
+}
+
+.region:hover {
+  transform: translateX(1rem);
+}
+
+@keyframes dropdown {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@media (min-width: 800px) {
+  .selected-region {
+    font-size: 1.5rem;
+    height: 4.5rem;
+  }
+
+  .regions,
+  .region button {
+    font-size: 1.5rem;
+  }
+
+  .region {
+    margin-bottom: 1rem;
+  }
+}

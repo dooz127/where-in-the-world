@@ -1,0 +1,40 @@
+.country-details-page {
+  background-color: var(--bg-main);
+  padding: 5rem 6vw;
+}
+
+.btn-back {
+  align-items: center;
+  background-color: var(--bg-header);
+  border-radius: 0.4rem;
+  border: none;
+  box-shadow: 2px 2px 5px 0 var(--shadow-color),
+    -2px -2px 5px 0 var(--shadow-color);
+  color: var(--text-color);
+  cursor: pointer;
+  display: flex;
+  height: 4rem;
+  justify-content: center;
+  margin: 1rem 0 3rem;
+  outline: none;
+  transition: all 0.4s;
+  width: 10rem;
+}
+
+.btn-back:hover {
+  box-shadow: 1px 1px 5px 0 var(--shadow-color);
+}
+
+.btn-back .icon {
+  font-size: 1.3rem;
+  transition: all 0.4s;
+}
+
+.btn-back:hover .icon {
+  transform: translateX(-0.7rem);
+}
+
+.btn-back span {
+  font-size: 1.3rem;
+  margin-left: 1rem;
+}

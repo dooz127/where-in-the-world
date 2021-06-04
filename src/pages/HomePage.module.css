@@ -1,0 +1,25 @@
+.home-page {
+  background-color: var(--bg-main);
+  min-height: 100vh;
+}
+
+.form-controls {
+  background-color: var(--bg-main);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 6vw 2rem 6vw;
+}
+
+.error {
+  color: var(--text-color);
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+}
+
+@media (min-width: 800px) {
+  .form-controls {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

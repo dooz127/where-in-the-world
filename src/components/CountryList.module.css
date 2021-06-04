@@ -1,0 +1,9 @@
+.country-list {
+  background-color: var(--bg-main);
+  column-gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 25rem);
+  justify-content: center;
+  padding: 3rem 6vw;
+  row-gap: 3rem;
+}

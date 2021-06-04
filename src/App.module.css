@@ -1,0 +1,17 @@
+.light {
+  --bg-header: #ffffff;
+  --bg-main: #fafafa;
+  --card-color: #ffffff;
+  --input-color: #858585;
+  --shadow-color: #dedede;
+  --text-color: #111111;
+}
+
+.dark {
+  --bg-header: #36464e;
+  --bg-main: #202c37;
+  --card-color: #3e5060;
+  --input-color: #ffffff;
+  --shadow-color: #1a1a1a;
+  --text-color: #ffffff;
+}

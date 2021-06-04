@@ -1,0 +1,30 @@
+.loader {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 200px;
+  width: 100%;
+}
+
+.icon {
+  font-size: 6rem;
+  color: var(--text-color);
+  border-radius: 50%;
+  margin-bottom: 20px;
+  animation: rotationRound 2s infinite linear;
+}
+
+.loader-text {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+@keyframes rotationRound {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(359deg);
+  }
+}
