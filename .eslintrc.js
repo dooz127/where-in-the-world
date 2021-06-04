@@ -5,7 +5,7 @@ module.exports = {
     es6: true
   },
   parserOptions: { ecmaVersion: 8 },
-  ignorePatterns: ['node_modules/*', '.next/*', '.out/*', '!.prettierrc.js'],
+  ignorePatterns: ['node_modules/*', 'build/*', '!.prettierrc.js'],
   extends: ['eslint:recommended'],
   overrides: [
     {
@@ -31,7 +31,7 @@ module.exports = {
         'jsx-a11y/anchor-is-valid': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
         '@typescript-eslint/explicit-function-return-type': [
-          'warn',
+          'off',
           {
             allowExpressions: true,
             allowConciseArrowFunctionExpressionsStartingWithVoid: true
