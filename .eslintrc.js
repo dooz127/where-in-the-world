@@ -31,7 +31,7 @@ module.exports = {
         'jsx-a11y/anchor-is-valid': 'off',
         '@typescript-eslint/no-unused-vars': ['error'],
         '@typescript-eslint/explicit-function-return-type': [
-          'off',
+          'warn',
           {
             allowExpressions: true,
             allowConciseArrowFunctionExpressionsStartingWithVoid: true
