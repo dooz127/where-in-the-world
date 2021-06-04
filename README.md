@@ -17,7 +17,7 @@ Builds the app for production to the `build` folder.\
 
 ## Deployment
 
-The app is deployed to [Heroku](https://www.heroku.com), and can be accessed by clicking [here]().
+The app is deployed to [Heroku](https://www.heroku.com), and can be accessed by clicking [here](https://duy-nguyen-where-in-the-world.herokuapp.com/).
 
 ## Libraries, Frameworks, Tools
 
